@@ -46,17 +46,13 @@ Learn how to advertise the Muon's current battery percentage using standard BLE 
       ![Serial monitor](./images/serial-monitor.png)
 
 5. **Observe output**:
-   1. The program should begin to log the battery readings to the serial monitor
+   1. The program will begin to log the battery readings to the serial monitor:
 
    ```bash
    0000076761 [app] INFO: V=4.03V SoC=65.9% nSoC=77.5%
    0000091779 [app] INFO: V=4.02V SoC=66.0% nSoC=77.6%
    0000106797 [app] INFO: V=4.02V SoC=66.1% nSoC=77.8%
    ```
-
-   2. If you connect to the device using a phone or computer, the central device's UI should reflect the Muon's battery state.
-
-      ![Battery service](./images/battery-service.png)
 
 ---
 
@@ -112,6 +108,8 @@ BleCharacteristic batteryLevelChar(
 ### Usage
 
 Connect to the device using a BLE testing app such as [nRF Connect](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403) to view the battery readings from the device via the standard battery BLE service.
+
+![Battery service](./images/battery-service.png)
 
 ---
 
