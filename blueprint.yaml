@@ -1,31 +1,36 @@
 # blueprint.yaml
-slug: blueprint-template
+slug: blueprint-beginner-ble-battery
 type: Tutorial
-category: "Blueprint Basics"
-expertiseLevel: "Beginner"               # Beginner | Intermediate | Advanced
-tags: ["Publish", "Function", "Console"]
-icon: assets/hero.jpg                    # relative path to an image or SVG
-gitrepo: https://github.com/particle-iot/blueprint-template
-name: "Blueprint Template"
-shortDescription: "A sample template for creating new Blueprints"
-version: 1.0.0                           # use SemVer
-models: []                               # e.g., ["P2", "Boron 404X"]
+category: "Device integration and connectivity"
+expertiseLevel: "Beginner" # Beginner | Intermediate | Advanced
+tags: ["BLE", "Battery", "Muon"]
+icon: assets/energy.svg # relative path to an image or SVG
+gitrepo: https://github.com/particle-iot/blueprint-beginner-ble-battery
+name: "BLE Battery Service"
+shortDescription: "Learn how to advertise the Muon's current battery percentage using standard BLE battery service."
+version: 1.0.0 # use SemVer
+models: ["Muon"] # e.g., ["P2", "Boron 404X"]
 language: ["C++"]
-cloudServices: []                        # e.g., ["IFTTT", "Google Sheets"]
-integrations: []                         # e.g., ["Webhook"]
+cloudServices: [] # e.g., ["IFTTT", "Google Sheets"]
+integrations: [] # e.g., ["Webhook"]
 supportedDevices:
-  - name: Any Wi-Fi or Cellular Device
-    link: https://docs.particle.io
+  - name: Muon
+    link: https://docs.particle.io/reference/datasheets/m-series/muon-datasheet/
 webIdeLink:
 webSetupLink:
 hardwareDependencies:
-  - name: Supported device
+  - name: Muon
+  - name: MSoM
   - name: USB cable
+  - name: Compatible battery
 introduction: |
-  Quickstart blueprint.
+  Learn how to advertise the Muon's current battery percentage using standard BLE battery service.
 description: |
-  This tutorial shows how to create a new blueprint.
+  This tutorial shows how to use the standard BLE battery service on the Particle Muon with MSoM and a battery. You'll configure the PM-BAT power management, read voltage and state of charge, and advertise the battery level over BLE for apps like nRF Connect.
 additionalResources:
-  - title: Particle Dev Docs
-    link: https://developer.particle.io/
-
+  - title: PM-BAT
+    link: https://docs.particle.io/hardware/power/pm-bat-datasheet/#overview
+  - title: Particle Muon
+    link: https://docs.particle.io/reference/datasheets/m-series/muon-datasheet/
+  - title: Particle BLE
+    link: https://docs.particle.io/reference/device-os/api/bluetooth-le-ble/bluetooth-le-ble/
