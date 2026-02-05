@@ -35,18 +35,18 @@ Learn how to advertise the Muon's current battery percentage using standard BLE 
 2. **Open the project** in Particle Workbench or your preferred editor.
 
 3. **Flash to your device:**
-   1. Configure project for your device using Particle Workbench and the command pallette (cmd / ctrl + shift + p):
+   - Configure project for your device using Particle Workbench and the command pallette (cmd / ctrl + shift + p):
       ![Configure project for device](./images/configure-project.png)
-   2. Select your device model and Device OS release:
+   - Select your device model and Device OS release:
       ![Select device](./images/configure-msom.png)
       ![Select device OS](./images/configure-device-os.png)
 
 4. **Open a serial terminal**:
-   1. Open a serial monitor session by choosing `Particle: Serial monitor` from the command pallette:
+   - Open a serial monitor session by choosing `Particle: Serial monitor` from the command pallette:
       ![Serial monitor](./images/serial-monitor.png)
 
 5. **Observe output**:
-   1. The program will begin to log the battery readings to the serial monitor:
+   - The program will begin to log the battery readings to the serial monitor:
 
    ```bash
    0000076761 [app] INFO: V=4.03V SoC=65.9% nSoC=77.5%
